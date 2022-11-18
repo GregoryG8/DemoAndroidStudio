@@ -9,42 +9,72 @@
     tools:context=".Inicio">
 
 
-
-
-    <EditText
-        android:id="@+id/edCantidad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:hint="Pick your user name" />
-
-    <EditText
-        android:id="@+id/edValor"
-        android:layout_width="wrap_content"
-        android:editable="false"
-        android:layout_height="wrap_content"
-        android:hint="Pick your password"
-        android:inputType="numberDecimal" />
-
-    <Button
-        android:id="@+id/btnAumentar"
+    <TextView
+        android:id="@+id/txtName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="saludar"
-        android:text="Aumentar" />
+        android:text="Bienvenido: "
+        android:textSize="25sp"
+        android:layout_marginTop="100dp"
+        />
 
     <Button
         android:id="@+id/btnVolver"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="volver"
-        android:text="Volver" />
-    <Button
-        android:id="@+id/btnPintar"
+        android:onClick="navegar"
+        android:text="Volver"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="100dp"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="367dp"
+        />
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="pintar"
-        android:text="pintar" />
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/btnAzul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Azul"
+            android:onClick="onClick"
+
+            ></Button>
+        <Button
+            android:id="@+id/btnRojo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rojo"
+            android:onClick="onClick"
+
+            ></Button>
+        <Button
+            android:id="@+id/btnNigga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Negro"
+            android:onClick="onClick"
+
+            ></Button>
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/Contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        ></FrameLayout>
 
 
 </LinearLayout>
+
